@@ -10,7 +10,7 @@ public class ArrayDemo2 {
 		int[] rooms = new int[]{4, 2, 3, 6, 1};
 		System.out.println("房客入住後:");
 		System.out.println(Arrays.toString(rooms));
-
+		
 	}
 
 }
