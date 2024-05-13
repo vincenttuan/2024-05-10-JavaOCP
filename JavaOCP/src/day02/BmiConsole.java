@@ -10,7 +10,8 @@ public class BmiConsole {
 		String result = BmiUtil.getResult(bmi);
 		System.out.println(bmi);
 		System.out.println(result);
-
+		//-------------------------------------
+		BmiUtil.printBmiInfo(h, w);
 	}
 
 }
