@@ -36,11 +36,25 @@ public class BmiGUI {
 		bmiLabel = new JLabel("您的 BMI 是:");
 		jFrame.add(bmiLabel);
 		
-		resultLabel = new JLabel("診斷結果");
+		resultLabel = new JLabel("診斷結果:");
 		jFrame.add(resultLabel);
 		
 		jFrame.setVisible(true); // 顯示視窗
+		
+		// 計算 bmi 的按鈕按下去所要執行的方法
+		calcBmiButton.addActionListener((event) -> calcBmi());
 	} 
+	
+	private static void calcBmi() {
+		// heightField.getText() 取得的是字串所以要利用 Double.parseDouble() 轉型
+		double h = Double.parseDouble(heightField.getText());
+		double w = Double.parseDouble(weightField.getText());
+		double bmi = BmiUtil.getBmi(h, w);
+		String result = BmiUtil.getResult(bmi);
+		// 將 bmi 值與診斷結果顯示在畫面中
+		bmiLabel.setText(String.format("您的 BMI 是:%.2f", bmi));
+		resultLabel.setText(String.format("診斷結果:", result));
+	}
 	
 	public static void main(String[] args) {
 		createUI();
