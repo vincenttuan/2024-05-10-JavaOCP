@@ -26,6 +26,8 @@ public class ArrayDemo1 {
 		System.out.println("房客入住後:");
 		System.out.println(Arrays.toString(rooms));
 		
+		System.out.printf("房間數: %d 間%n", rooms.length);
+		
 	}
 
 }
