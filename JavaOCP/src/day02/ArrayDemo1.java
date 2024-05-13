@@ -14,6 +14,8 @@ public class ArrayDemo1 {
 		System.out.println(rooms);
 		System.out.println(rooms[0] + ", " + rooms[1] + ", " + rooms[2] + ", " + rooms[3] + ", " + rooms[4]);
 		System.out.println(Arrays.toString(rooms));
+		
+		
 	}
 
 }
