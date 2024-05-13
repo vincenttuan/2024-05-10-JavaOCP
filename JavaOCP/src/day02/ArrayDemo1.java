@@ -27,7 +27,7 @@ public class ArrayDemo1 {
 		System.out.println(Arrays.toString(rooms));
 		
 		System.out.printf("房間數: %d 間%n", rooms.length);
-		
+		// 請計算房間總人數與平均人數
 	}
 
 }
