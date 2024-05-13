@@ -53,7 +53,7 @@ public class BmiGUI {
 		String result = BmiUtil.getResult(bmi);
 		// 將 bmi 值與診斷結果顯示在畫面中
 		bmiLabel.setText(String.format("您的 BMI 是:%.2f", bmi));
-		resultLabel.setText(String.format("診斷結果:", result));
+		resultLabel.setText(String.format("診斷結果:%s", result));
 	}
 	
 	public static void main(String[] args) {
