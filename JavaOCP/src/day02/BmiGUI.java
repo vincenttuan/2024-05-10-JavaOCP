@@ -8,7 +8,10 @@ import java.util.Locale;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
 
 public class BmiGUI {
 	// 宣告 GUI 元件
@@ -16,6 +19,8 @@ public class BmiGUI {
 	static JTextField heightField, weightField; // 身高, 體重輸入框
 	static JButton calcBmiButton; // 計算 Bmi 的按鈕
 	static JLabel bmiLabel, resultLabel; // 放置 bmi 值與診斷結果 
+	static JTable bmiTable; // 顯示歷史的 BMI 計算結果的表格
+	static DefaultTableModel tableModel; // 表格模型
 	
 	private static void createUI() {
 		
@@ -29,7 +34,7 @@ public class BmiGUI {
 		heightField = new JTextField();
 		jFrame.add(heightField);
 		
-		jFrame.add(new JLabel("體重(cm):"));
+		jFrame.add(new JLabel("體重(kg):"));
 		weightField = new JTextField();
 		jFrame.add(weightField);
 		
@@ -41,6 +46,17 @@ public class BmiGUI {
 		
 		resultLabel = new JLabel("診斷結果:");
 		jFrame.add(resultLabel);
+		
+		// 初始化表格模型並添加表格資訊
+		tableModel = new DefaultTableModel();
+		tableModel.addColumn("身高");
+		tableModel.addColumn("體重");
+		tableModel.addColumn("BMI");
+		tableModel.addColumn("診斷");
+		
+		bmiTable = new JTable(tableModel);
+		JScrollPane scrollPane = new JScrollPane(bmiTable); // 將 bmiTable 掛上 滾動條
+		jFrame.add(scrollPane);
 		
 		jFrame.setVisible(true); // 顯示視窗
 		
