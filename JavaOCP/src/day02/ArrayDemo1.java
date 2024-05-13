@@ -28,6 +28,10 @@ public class ArrayDemo1 {
 		
 		System.out.printf("房間數: %d 間%n", rooms.length);
 		// 請計算房間總人數與平均人數
+		int sum = rooms[0] + rooms[1] + rooms[2] + rooms[3] + rooms[4];
+		double avg = (double)sum / 5;
+		System.out.printf("房間總人數:%d 平均人數:%.1f%n", sum, avg);
+		
 	}
 
 }
