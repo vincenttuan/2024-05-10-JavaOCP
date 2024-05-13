@@ -1,7 +1,9 @@
 package day02;
 
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Label;
+import java.util.Locale;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -16,17 +18,18 @@ public class BmiGUI {
 	static JLabel bmiLabel, resultLabel; // 放置 bmi 值與診斷結果 
 	
 	private static void createUI() {
+		
 		// GUI 畫面初始化
 		jFrame = new JFrame("BMI 計算器"); // 建立視窗與標頭
 		jFrame.setSize(300, 200); // 視窗大小
 		// 5(有 5 列) 2(有 2 欄) 5(水平間隙) 5(垂直間隙)
 		jFrame.setLayout(new GridLayout(5, 2, 5, 5)); // 設定布局樣式
 		
-		jFrame.add(new Label("Height(cm):"));
+		jFrame.add(new JLabel("身高(cm):"));
 		heightField = new JTextField();
 		jFrame.add(heightField);
 		
-		jFrame.add(new Label("Weight(cm):"));
+		jFrame.add(new JLabel("體重(cm):"));
 		weightField = new JTextField();
 		jFrame.add(weightField);
 		
