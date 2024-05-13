@@ -73,6 +73,9 @@ public class BmiGUI {
 		// 將 bmi 值與診斷結果顯示在畫面中
 		bmiLabel.setText(String.format("您的 BMI 是:%.2f", bmi));
 		resultLabel.setText(String.format("診斷結果:%s", result));
+		// 將 bmi 相關資訊放到表格中
+		Object[] rowData = {h, w, bmi, result};
+		tableModel.addRow(rowData);
 	}
 	
 	public static void main(String[] args) {
