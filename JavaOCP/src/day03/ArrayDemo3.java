@@ -17,6 +17,10 @@ public class ArrayDemo3 {
 		for(int i=rooms.length-1;i>=0;i--) {
 			System.out.printf("%d 號房有 %d 人%n", i, rooms[i]);
 		}
+		System.out.println("---------------");
+		for(int i=0, lens=rooms.length;i<lens;i++) {
+			System.out.printf("%d 號房有 %d 人%n", i, rooms[i]);
+		}
 		
 	}
 
