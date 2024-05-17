@@ -14,10 +14,14 @@ public class ArrayDemo6 {
 		// 紅茶 $15 x 5 = 75
 		// 咖啡 $45 x 9 = 405
 		// -----------------
+		int total = 0; // 總金額
 		for(int i=0;i<names.length;i++) {
 			int subtotal = prices[i] * amounts[i];
+			total = total + subtotal; // 總金額是每次小計的累加
 			System.out.printf("%s $%d x %d = %d%n", names[i], prices[i], amounts[i], subtotal);
 		}
+		System.out.println("-------------------");
+		System.out.printf("總金額 $%d%n", total);
 	}
 
 }
