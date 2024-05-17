@@ -15,9 +15,16 @@ public class ArrayDemo5 {
 		// 咖啡 $45 x 9
 		// -------------
 		
+		//System.out.println(names[0] + " $" + prices[0] + " X " + amounts[0]);
+		System.out.printf("%s $%d x %d%n", names[0], prices[0], amounts[0]);
+		System.out.printf("%s $%d x %d%n", names[1], prices[1], amounts[1]);
+		System.out.printf("%s $%d x %d%n", names[2], prices[2], amounts[2]);
 		
+		System.out.println("------------------------");
 		
-
+		for(int i=0;i<names.length;i++) {
+			System.out.printf("%s $%d x %d%n", names[i], prices[i], amounts[i]);
+		}
 	}
 
 }
