@@ -12,10 +12,11 @@ public class ArrayDemo3 {
 		for(int i=0;i<rooms.length;i++) {
 			System.out.printf("%d 號房有 %d 人%n", i, rooms[i]);
 		}
+		System.out.println("---------------");
 		// i從4~0
-		
-		
-		// 計算總人數
+		for(int i=rooms.length-1;i>=0;i--) {
+			System.out.printf("%d 號房有 %d 人%n", i, rooms[i]);
+		}
 		
 	}
 
