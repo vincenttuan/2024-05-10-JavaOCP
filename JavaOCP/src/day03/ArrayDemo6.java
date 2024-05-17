@@ -14,7 +14,10 @@ public class ArrayDemo6 {
 		// 紅茶 $15 x 5 = 75
 		// 咖啡 $45 x 9 = 405
 		// -----------------
-
+		for(int i=0;i<names.length;i++) {
+			int subtotal = prices[i] * amounts[i];
+			System.out.printf("%s $%d x %d = %d%n", names[i], prices[i], amounts[i], subtotal);
+		}
 	}
 
 }
