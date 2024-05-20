@@ -23,3 +23,6 @@ OTC大盤即時 -http://mis.twse.com.tw/stock/api/getChartOhlcStatis.jsp?ex=otc&
 個股日本益比、殖利率及股價淨值比（依代碼查詢） -http://www.twse.com.tw/exchangeReport/BWIBBU?&date=20171121&stockNo=2330
 
 搜尋股票 -http://mis.twse.com.tw/stock/api/getStockNames.jsp?n=2330
+
+歷史股價資料
+https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY?date=20240501&stockNo=2330&response=json
