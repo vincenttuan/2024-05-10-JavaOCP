@@ -2,8 +2,8 @@ package day04;
 
 public class Smoothing {
 	public static void main(String[] args) {
-		double[] prices = {10, 12, 15};
-		double alpha = 0.3;
+		double[] prices = {742, 754, 783, 766, 782, 795, 790, 772, 780, 786, 800, 802, 796, 802, 819, 825.00, 839.00, 841.00, 835.00, 835.00};
+		double alpha = 0.4;
 		double forecast = getSmoothing(prices, alpha);
 		System.out.printf("預測第 %d 天的股價 $%.2f%n", prices.length+1, forecast);
 		
