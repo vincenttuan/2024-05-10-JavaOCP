@@ -4,6 +4,16 @@ package day04;
 public class ArrayFunc3 {
 	
 	public static void main(String[] args) {
+		int[] scoreA = {100, 65, 73, 85, 92};
+		int[] scoreB = {56, 65, 55, 66, 60};
+		
+		// 印出 A 班平均
+		double avgA = getAvg(scoreA);
+		System.out.printf("A 班平均 %.1f%n", avgA);
+		
+		// 印出 B 班總分
+		int sumB = getSum(scoreB);
+		System.out.printf("B 班總分 %d%n", sumB);
 		
 	}
 	
