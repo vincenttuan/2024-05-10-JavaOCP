@@ -7,6 +7,8 @@ public class ArrayFunc2 {
 		int[] scoreB = {56, 65, 55, 66, 60};
 		
 		// 計算 A 與 B 的總分與平均 = ?
+		calcSumAndAvg(scoreA, "A");
+		calcSumAndAvg(scoreB, "B");
 	}
 	
 	// 計算總和與平均的方法
