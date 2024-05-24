@@ -11,7 +11,11 @@ public class StringDemo6 {
 		char gender = id.charAt(1); // 1
 		System.out.println(area);
 		System.out.println(gender);
-		
+		System.out.println(verifyId(id));
+	}
+	
+	// 身分證驗證
+	public static boolean verifyId(String id) {
 		int num = (1*1 + 0*9) 
 				+ (id.charAt(1)-48) * 8
 				+ (id.charAt(2)-48) * 7
@@ -23,8 +27,8 @@ public class StringDemo6 {
 				+ (id.charAt(8)-48) * 1
 				+ (id.charAt(9)-48) * 1;
 		
-		System.out.println(num);
-		System.out.println(num % 10 == 0);
+		//System.out.println(num);
+		return num % 10 == 0;
 	}
 
 }
