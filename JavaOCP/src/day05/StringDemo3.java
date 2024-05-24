@@ -7,6 +7,7 @@ public class StringDemo3 {
 		System.out.println(s1);
 		String name = s1.substring(3, 7); // 索引值從 3 開始到小於 7 的位置資料
 		System.out.println(name);
-		
+		String platform = s1.substring(8);
+		System.out.println(platform); // 索引值從 8 開始到末尾
 	}
 }
