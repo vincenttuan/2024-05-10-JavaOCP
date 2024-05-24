@@ -14,7 +14,7 @@ public class StringDemo4 {
 		// StringBuilder 可變字串
 		StringBuilder s2 = new StringBuilder("she sell sea shell on the sea shore");
 		System.out.println(s2);
-		s2 = s2.replace(4, 8, "Buy");
+		s2.replace(4, 8, "Buy");
 		System.out.println(s2);
 		
 	}
