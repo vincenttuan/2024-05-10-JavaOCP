@@ -1,5 +1,7 @@
 package day05;
 
+import java.util.Arrays;
+
 public class StreamDemo1 {
 
 	public static void main(String[] args) {
@@ -15,7 +17,8 @@ public class StreamDemo1 {
 			System.out.printf("%d ", score);
 		}
 		System.out.println(); // 換行
-		
+		// 3.利用 Arrays.stream() 串流
+		Arrays.stream(scores).forEach(score -> System.out.printf("%d ", score));
 	}
 
 }
