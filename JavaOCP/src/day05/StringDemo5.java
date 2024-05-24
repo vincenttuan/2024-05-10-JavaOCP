@@ -4,11 +4,11 @@ public class StringDemo5 {
 	public static void main(String[] args) {
 		StringBuilder msg = new StringBuilder("Java");
 		append(msg);
-		System.out.println(msg);
+		System.out.println(msg); // Java11
 		//--------------------------------------------
 		String data = "Java";
 		add(data);
-		System.out.println(data);
+		System.out.println(data); // Java
 	}
 	
 	public static void append(StringBuilder sb) {
