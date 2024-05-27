@@ -2,7 +2,7 @@ package day06;
 
 public class TicTacToe3 {
 	public static void main(String[] args) {
-		char[] board = {'X', 'O', ' ', 'O', 'X', ' ', ' ', 'X', 'O'};
+		char[] board = {' ', 'X', ' ', ' ', 'O', 'X', 'O', 'X', 'O'};
 		printBoard(board);
 		// 請問 O 可以放在那些地方獲勝 ?
 		
