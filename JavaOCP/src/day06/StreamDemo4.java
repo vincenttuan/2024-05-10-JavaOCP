@@ -20,6 +20,15 @@ public class StreamDemo4 {
 						   .average()
 						   .getAsDouble();
 		System.out.printf("平均: %.1f%n", avg);
+		
+		// 最大值
+		int max = Arrays.stream(scores)
+						.filter(score -> score >= 0)
+						.max()
+						.getAsInt();
+		System.out.printf("最大值: %d%n", max);
+		
+		
 
 	}
 
