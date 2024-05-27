@@ -17,7 +17,7 @@ public class MultiArrayDemo1 {
 		System.out.println(m[0][0]); // 值 = 100
 		System.out.println(m[1][1]); // 值 = 60
 		
-
+		
 	}
 
 }
