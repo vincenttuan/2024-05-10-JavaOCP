@@ -2,10 +2,11 @@ package day06;
 
 public class TicTacToe3 {
 	public static void main(String[] args) {
-		char[] board = {' ', 'X', ' ', ' ', 'O', 'X', 'O', 'X', 'O'};
+		char[] board = {' ', 'X', ' ', 'X', 'O', 'X', 'O', ' ', 'O'};
 		printBoard(board);
 		// 請問 O 可以放在那些地方獲勝 ?
-		
+		board[0] = 'O'; // board[2] = 'O'; board[7] = 'O';
+		printBoard(board);
 	}
 	
 	private static void printBoard(char[] board) {
@@ -16,6 +17,6 @@ public class TicTacToe3 {
 				System.out.println();
 			}
 		}
-		
+		System.out.println("------");
 	}
 }
