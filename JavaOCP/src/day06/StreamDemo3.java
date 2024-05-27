@@ -19,6 +19,7 @@ public class StreamDemo3 {
 			System.out.printf("%d ", score);
 		}
 		System.out.println();
+		//---------------------------------------------------------
 		// for-each: 計算總分,平均
 		int sum = 0; // 總分
 		int lens = 0; // 資料筆數
@@ -35,6 +36,7 @@ public class StreamDemo3 {
 		System.out.printf("總分: %d%n", sum);
 		System.out.printf("平均: %.1f%n", avg);
 		
+		//---------------------------------------------------------
 		// for-loop: 最高分
 		int max = scores[0]; // 假設 scores[0] 是最高分
 		for(int i=1;i<scores.length;i++) {
@@ -42,11 +44,11 @@ public class StreamDemo3 {
 				continue;
 			}
 			if(scores[i] > max) {
-				max = scores[i];
+				max = scores[i]; // 替換最高分
 			}
 		}
 		System.out.printf("最高分: %d%n", max);
-		
+		//---------------------------------------------------------
 		// for-loop: 最低分
 		int min = scores[0]; // 假設 scores[0] 是最低分
 		for(int i=1;i<scores.length;i++) {
@@ -54,7 +56,7 @@ public class StreamDemo3 {
 				continue;
 			}
 			if(scores[i] < min) {
-				min = scores[i];
+				min = scores[i]; // 替換最低分
 			}
 		}
 		System.out.printf("最低分: %d%n", min);
