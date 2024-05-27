@@ -1,6 +1,7 @@
 package day06;
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 
 public class StreamDemo6 {
 	public static void main(String[] args) {
@@ -22,6 +23,16 @@ public class StreamDemo6 {
 		//System.arraycopy(scores2, 0, combinScores, 6, scores2.length);
 		System.arraycopy(scores2, 0, combinScores, scores1.length, scores2.length);
 		System.out.println(Arrays.toString(combinScores));
+		
+		IntSummaryStatistics stat = Arrays.stream(combinScores)
+										  .filter(score -> score >= 0 && score <= 100)
+										  .summaryStatistics();
+		
+		System.out.printf("總分: %d%n", stat.getSum());
+		System.out.printf("平均: %.1f%n", stat.getAverage());
+		System.out.printf("最高: %d%n", stat.getMax());
+		System.out.printf("最低: %d%n", stat.getMin());
+		System.out.printf("個數: %d%n", stat.getCount());
 		
 	}
 }
