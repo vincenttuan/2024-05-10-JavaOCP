@@ -27,7 +27,7 @@ public class StreamDemo3 {
 			if(score < 0) {
 				continue;
 			}
-			++lens;
+			++lens; // 資料筆數+1
 			sum += score; // 總分累加
 		}
 		avg = (double)sum / lens;
