@@ -7,13 +7,13 @@ public class TicTacToe {
 		char[][] board = {
 				{'X', 'O', 'X'},
 				{'O', 'O', 'X'},
-				{' ', 'X', ' '}
+				{'X', ' ', ' '}
 		};
 		
 		printBoard(board);
 		
 		// 請問 board[?][?] = 'O' 可以讓 'O' 獲勝
-		board[?][?] = 'O';
+		board[2][1] = 'O';
 		printBoard(board);
 	}
 	
