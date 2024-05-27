@@ -28,7 +28,13 @@ public class StreamDemo4 {
 						.getAsInt();
 		System.out.printf("最大值: %d%n", max);
 		
-		
+		// 最小值
+		int min = Arrays.stream(scores)
+						.filter(score -> score >= 0)
+						.min()
+						.getAsInt();
+		System.out.printf("最小值: %d%n", min);
+				
 
 	}
 
