@@ -35,6 +35,39 @@ public class StreamDemo3 {
 		System.out.printf("總分: %d%n", sum);
 		System.out.printf("平均: %.1f%n", avg);
 		
+		// for-loop: 最高分
+		int max = scores[0]; // 假設 scores[0] 是最高分
+		for(int i=1;i<scores.length;i++) {
+			if(scores[i] < 0) {
+				continue;
+			}
+			if(scores[i] > max) {
+				max = scores[i];
+			}
+		}
+		System.out.printf("最高分: %d%n", max);
+		
+		// for-loop: 最低分
+		int min = scores[0]; // 假設 scores[0] 是最低分
+		for(int i=1;i<scores.length;i++) {
+			if(scores[i] < 0) {
+				continue;
+			}
+			if(scores[i] < min) {
+				min = scores[i];
+			}
+		}
+		System.out.printf("最低分: %d%n", min);
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
