@@ -1,5 +1,7 @@
 package day07;
 
+import java.util.Arrays;
+
 public class McDonalds {
 	public static void main(String[] args) {
 		// 準備商品 
@@ -75,6 +77,22 @@ public class McDonalds {
 			System.out.println("----------------------");
 		}
 		System.out.printf("總計 %d%n", sum);
+		
+		System.out.println("======================");
+		
+		// 請用 Java Stream 來改寫 for-each 的部分
+		int sum2 = Arrays.stream(combos).mapToInt(combo -> {
+			System.out.printf("餐號 %d%n", combo.no);
+			System.out.printf("主餐 %s 價格 %d%n", combo.hamburg.name, combo.hamburg.price);
+			System.out.printf("副餐 %s 價格 %d%n", combo.snack.name, combo.snack.price);
+			System.out.printf("飲品 %s(%c) 價格 %d%n", combo.beverage.name, combo.beverage.size, combo.beverage.price);
+			// 小計
+			int subTotal = combo.hamburg.price + combo.snack.price + combo.beverage.price;
+			System.out.printf("小計 %d%n", subTotal);
+			System.out.println("----------------------");
+			return subTotal;
+		}).sum();
+		System.out.printf("總計 %d%n", sum2);
 		
 	}
 }
