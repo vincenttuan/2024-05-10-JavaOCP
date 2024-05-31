@@ -1,5 +1,7 @@
 package day07;
 
+import java.util.Arrays;
+
 public class EmployeeMain {
 
 	public static void main(String[] args) {
@@ -36,7 +38,8 @@ public class EmployeeMain {
 		}
 		System.out.printf("總薪資: %,d%n", sum3);
 		
-		
+		int sum4 = Arrays.stream(employees).mapToInt(emp -> emp.salary).sum();
+		System.out.printf("總薪資: %,d%n", sum4);
 	}
 
 }
