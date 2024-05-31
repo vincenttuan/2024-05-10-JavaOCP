@@ -43,6 +43,21 @@ public class McDonalds {
 		coffee.price = 30;
 		
 		//--------------------------------------
+		// 建立組合餐
+		Combo combo1 = new Combo();
+		combo1.no = 1;
+		combo1.hamburg = bigMac;
+		combo1.snack = fries;
+		combo1.beverage = cola;
+		
+		Combo combo2 = new Combo();
+		combo2.no = 2;
+		combo2.hamburg = fish;
+		combo2.snack = salad;
+		combo2.beverage = soup;
+		
+		Combo[] combos = {combo1, combo2};
+		// 將所點的商品名稱與價格印出
 		
 		
 		
