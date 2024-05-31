@@ -57,6 +57,9 @@ public class McDonalds {
 		combo2.beverage = soup;
 		
 		Combo[] combos = {combo1, combo2};
+		// 更換副餐
+		combos[0].snack = icecream;
+		
 		// 將所點的商品名稱與價格印出
 		int sum = 0; // 總計
 		for(Combo combo : combos) {
