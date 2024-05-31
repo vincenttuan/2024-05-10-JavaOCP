@@ -23,6 +23,8 @@ public class DrinkMain {
 		drink4.amount = 15;
 		drink4.price = 55;
 		
+		// drink1~drink4 是飲料訂單
+		// 請問總共花費多少 ?
 
 	}
 
