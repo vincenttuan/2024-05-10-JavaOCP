@@ -59,9 +59,11 @@ public class McDonalds {
 		Combo[] combos = {combo1, combo2};
 		// 將所點的商品名稱與價格印出
 		for(Combo combo : combos) {
+			System.out.printf("餐號 %d%n", combo.no);
 			System.out.printf("主餐 %s 價格 %d%n", combo.hamburg.name, combo.hamburg.price);
 			System.out.printf("副餐 %s 價格 %d%n", combo.snack.name, combo.snack.price);
 			System.out.printf("飲品 %s(%c) 價格 %d%n", combo.beverage.name, combo.beverage.size, combo.beverage.price);
+			System.out.println("----------------------");
 		}
 		
 		
