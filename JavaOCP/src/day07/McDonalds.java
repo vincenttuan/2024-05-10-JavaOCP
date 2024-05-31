@@ -39,8 +39,8 @@ public class McDonalds {
 		
 		Beverage coffee = new Beverage();
 		coffee.name = "美式咖啡";
-		soup.size = '小';
-		soup.price = 30;
+		coffee.size = '小';
+		coffee.price = 30;
 		
 		//--------------------------------------
 		
