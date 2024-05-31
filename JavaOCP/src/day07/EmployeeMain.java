@@ -19,9 +19,17 @@ public class EmployeeMain {
 		emp3.level = 4;
 		
 		// 總薪資
-		int sum = emp1.salary + emp2.salary + emp3.salary;
+		int sum1 = emp1.salary + emp2.salary + emp3.salary;
+		System.out.printf("總薪資: %,d%n", sum1);
 		
-		System.out.printf("總薪資: %,d%n", sum);
+		Employee[] employees = {emp1, emp2, emp3};
+		int sum2 = 0;
+		for(int i=0;i<employees.length;i++) {
+			sum2 += employees[i].salary;
+		}
+		System.out.printf("總薪資: %,d%n", sum2);
+		
+		
 		
 		
 	}
