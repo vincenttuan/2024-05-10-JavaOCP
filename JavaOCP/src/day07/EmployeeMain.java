@@ -22,14 +22,19 @@ public class EmployeeMain {
 		int sum1 = emp1.salary + emp2.salary + emp3.salary;
 		System.out.printf("總薪資: %,d%n", sum1);
 		
-		Employee[] employees = {emp1, emp2, emp3};
+		Employee[] employees = {emp1, emp2, emp3}; // Employee 物件陣列
+		
 		int sum2 = 0;
 		for(int i=0;i<employees.length;i++) {
 			sum2 += employees[i].salary;
 		}
 		System.out.printf("總薪資: %,d%n", sum2);
 		
-		
+		int sum3 = 0;
+		for(Employee emp : employees) {
+			sum3 += emp.salary;
+		}
+		System.out.printf("總薪資: %,d%n", sum3);
 		
 		
 	}
