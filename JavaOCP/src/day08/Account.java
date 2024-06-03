@@ -2,8 +2,10 @@ package day08;
 
 // 銀行帳戶
 public class Account {
+	private static final int fee = 30; // 轉帳手續費
 	private String name; // 戶名
 	private int balance; // 餘額
+	
 	
 	// 設定戶名(name)
 	void setName(String name) {
