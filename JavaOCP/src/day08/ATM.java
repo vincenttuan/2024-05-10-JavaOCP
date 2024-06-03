@@ -10,7 +10,7 @@ public class ATM {
 		johnAct.deposit(5000);
 		johnAct.printBalance();
 		
-		johnAct.withdraw(20000);
+		johnAct.withdraw(2000);
 		johnAct.printBalance();
 		
 		johnAct.transfer(2500, maryAct);
