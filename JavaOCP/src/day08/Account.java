@@ -44,11 +44,12 @@ public class Account {
 			System.out.println("轉帳失敗: 轉帳金額不得 <= 0");
 			return;
 		}
-		if(amount > balance) {
+		if(amount + fee > balance) {
 			System.out.println("轉帳失敗: 餘額不足");
 			return;
 		}
-		balance -= amount; // 我方: 餘額扣抵(提款)
+		//balance -= (amount + fee); // 我方: 餘額扣抵(提款)
+		withdraw(amount + fee);
 		act.deposit(amount); // 對方: 存款
 	}
 	
