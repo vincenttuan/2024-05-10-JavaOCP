@@ -1,6 +1,12 @@
 package day08;
 
 public class BMI {
+	private static final String NORMAL = "正常";
+	private static final String OVERWEIGHT = "過重";
+	private static final String UNDERWEIGHT = "過輕";
+	private static final int MAX = 23;
+	private static final int MIN = 18;
+	
 	private String name;
 	private double height;
 	private double weight;
@@ -30,7 +36,7 @@ public class BMI {
 	}
 	
 	private String getResult(double bmi) {
-		String result = bmi > 23 ? "過重" : bmi <= 18 ? "過輕" : "正常";
+		String result = bmi > MAX ? OVERWEIGHT : bmi <= MIN ? UNDERWEIGHT : NORMAL;
 		return result;
 	}
 	
