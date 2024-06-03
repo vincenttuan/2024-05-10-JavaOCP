@@ -3,7 +3,7 @@ package day08;
 // 銀行帳戶
 public class Account {
 	String name; // 戶名
-	int balance; // 餘額
+	private int balance; // 餘額
 	
 	// 存款(存款金額)
 	void deposit(int amount) { 
