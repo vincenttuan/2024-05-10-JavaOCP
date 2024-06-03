@@ -3,9 +3,9 @@ package day08;
 public class ATM {
 	public static void main(String[] args) {
 		Account johnAct = new Account(); // John 帳戶
-		johnAct.name = "John";
+		johnAct.setName("John");
 		Account maryAct = new Account(); // Mary 帳戶
-		maryAct.name = "Mary";
+		maryAct.setName("Mary");
 		
 		johnAct.deposit(5000);
 		johnAct.printBalance();

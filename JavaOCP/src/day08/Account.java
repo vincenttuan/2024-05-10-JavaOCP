@@ -2,8 +2,17 @@ package day08;
 
 // 銀行帳戶
 public class Account {
-	String name; // 戶名
+	private String name; // 戶名
 	private int balance; // 餘額
+	
+	// 設定戶名(name)
+	void setName(String name) {
+		if(name == null || name.trim().length() == 0) {
+			System.out.println("戶名設定錯誤");
+			return;
+		}
+		this.name = name.trim(); // trim() 除去字串的左右空白
+	}
 	
 	// 存款(存款金額)
 	void deposit(int amount) { 
