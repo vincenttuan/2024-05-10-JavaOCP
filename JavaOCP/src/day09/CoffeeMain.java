@@ -15,5 +15,13 @@ public class CoffeeMain {
 		// 列出每一個咖啡品項
 		//Arrays.stream(coffees).forEach(coffee -> System.out.println(coffee));
 		Arrays.stream(coffees).forEach(System.out::println);
+		
+		// 請印出平均價格
+		double avg = Arrays.stream(coffees)
+						   .mapToInt(coffee -> coffee.getPrice())
+						   .average()
+						   .getAsDouble();
+		System.out.printf("平均價格: %.1f%n", avg);
+						   
 	}
 }
