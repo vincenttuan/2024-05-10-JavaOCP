@@ -23,7 +23,7 @@ public class CoffeeMain {
 						   .getAsDouble();
 		System.out.printf("平均價格: %.1f%n", avg);
 		
-		// 請印出最貴的咖啡名字
+		// 請印出最貴的咖啡名字與價格
 		
 						   
 	}
