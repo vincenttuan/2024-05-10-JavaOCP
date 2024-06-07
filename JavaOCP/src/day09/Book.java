@@ -30,4 +30,12 @@ public class Book {
 		this.totalPages = totalPages;
 	}
 	
+	public static void main(String[] args) {
+		Book book1 = new Book();
+		Book book2 = new Book("Java");
+		Book book3 = new Book("Python", "John");
+		Book book4 = new Book("MySQL", "Mary", 500);
+		
+	}
+	
 }
