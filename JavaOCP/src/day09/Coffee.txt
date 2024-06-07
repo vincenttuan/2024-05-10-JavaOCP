@@ -1,0 +1,6 @@
+name, price, origin
+Espresso, 50, Italy
+Latte, 45, France
+Cappuccino, 55, Italy
+Americano, 30, USA
+Mocha, 40, Yemen
