@@ -1,6 +1,8 @@
 package day09;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Optional;
 
 public class CoffeeMain {
 	public static void main(String[] args) {
@@ -18,7 +20,8 @@ public class CoffeeMain {
 		
 		// 請印出平均價格
 		double avg = Arrays.stream(coffees)
-						   .mapToInt(coffee -> coffee.getPrice())
+						   //.mapToInt(coffee -> coffee.getPrice())
+						   .mapToInt(Coffee::getPrice)
 						   .average()
 						   .getAsDouble();
 		System.out.printf("平均價格: %.1f%n", avg);
@@ -28,6 +31,13 @@ public class CoffeeMain {
 				   .mapToInt(coffee -> coffee.getPrice())
 				   .max().getAsInt();
 		Arrays.stream(coffees).filter(coffee -> coffee.getPrice() == max).findFirst().stream().forEach(maxPrice -> System.out.printf("%s 咖啡, 最高價格: %s%n", maxPrice.getName(), maxPrice.getPrice()));
-						   
+		//--------------------------------------------------
+		Coffee maxPriceCoffee = Arrays.stream(coffees)
+									  //.max(Comparator.comparingInt(coffee->coffee.getPrice()))
+									  .max(Comparator.comparingInt(Coffee::getPrice))
+									  .get();
+		System.out.printf("%s 咖啡, 最高價格: %s%n", 
+				maxPriceCoffee.getName(), maxPriceCoffee.getPrice());
+		
 	}
 }
