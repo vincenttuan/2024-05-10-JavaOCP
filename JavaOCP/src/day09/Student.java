@@ -7,9 +7,11 @@ public class Student {
 	
 	public Student() {
 		this(-1, "Unknow");
+		System.out.println("Student 建構子1");
 	}
 	
 	public Student(int id, String name) {
+		System.out.println("Student 建構子2");
 		this.id = id;
 		this.name = name;
 	}
