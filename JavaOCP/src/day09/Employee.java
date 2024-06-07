@@ -6,9 +6,22 @@ public class Employee {
 	private int salary;  // 薪資 
 	
 	// 建構子
+	public Employee() {
+		//System.out.println("呼叫  Employee 建構子");
+	}
+	
+	// 建構子
 	public Employee(String name, int salary) {
-		System.out.println("呼叫  Employee 建構子");
+		//System.out.println("呼叫  Employee 建構子");
 		this.name = name;
+		this.salary = salary;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 	
