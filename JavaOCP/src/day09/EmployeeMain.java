@@ -12,6 +12,9 @@ public class EmployeeMain {
 		System.out.println(emp1); // emp1.toString();
 		System.out.println(emp2); // emp2.toString();
 		System.out.println(emp3); // emp3.toString();
+		
+		System.out.println(emp1.getName());
+		System.out.println(emp3.getSalary());
 	}
 
 }

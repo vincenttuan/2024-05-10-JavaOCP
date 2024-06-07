@@ -17,6 +17,14 @@ public class Employee {
 		this.salary = salary;
 	}
 	
+	public String getName() {
+		return name;
+	}
+	
+	public int getSalary() {
+		return salary;
+	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
