@@ -24,7 +24,10 @@ public class CoffeeMain {
 		System.out.printf("平均價格: %.1f%n", avg);
 		
 		// 請印出最貴的咖啡名字與價格
-		
+		int max = Arrays.stream(coffees)
+				   .mapToInt(coffee -> coffee.getPrice())
+				   .max().getAsInt();
+		Arrays.stream(coffees).filter(coffee -> coffee.getPrice() == max).findFirst().stream().forEach(maxPrice -> System.out.printf("%s 咖啡, 最高價格: %s%n", maxPrice.getName(), maxPrice.getPrice()));
 						   
 	}
 }
