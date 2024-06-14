@@ -15,6 +15,7 @@ public class VarargDemo {
 		int[] nums2 = {100, 90, 80, 70, 60, 50};
 		System.out.println(add(nums1));
 		System.out.println(add(nums2));
+		System.out.println(add(new int[] {100, 90, 80, 70}));
 		//-------------------------------------
 		
 	}
