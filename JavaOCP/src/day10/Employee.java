@@ -5,7 +5,7 @@ public class Employee {
 	private String name;
 	
 	public Employee() {
-		
+		System.out.println("建立 Employee 物件");
 	}
 
 	public int getSalary() {

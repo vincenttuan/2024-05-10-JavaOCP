@@ -4,7 +4,7 @@ public class Manager extends Employee {
 	private int budget;
 
 	public Manager() {
-		
+		System.out.println("建立 Manager 物件");
 	}
 
 	public int getBudget() {

@@ -4,7 +4,7 @@ public class Supervisor extends Manager {
 	private double stockOptions;
 
 	public Supervisor() {
-		
+		System.out.println("建立 Supervisor 物件");
 	}
 
 	public double getStockOptions() {
