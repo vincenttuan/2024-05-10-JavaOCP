@@ -5,8 +5,8 @@ public class Manager extends Employee {
 	
 	public Manager(String name, int salary, int budget) {
 		//super(name, salary); // 調用父建構子
-		setName(name);
-		setSalary(salary);
+		setName(name); // 調用父的方法
+		setSalary(salary); // 調用父的方法
 		this.budget = budget;
 	}
 	
