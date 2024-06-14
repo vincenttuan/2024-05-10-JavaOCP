@@ -4,6 +4,11 @@ public class Employee {
 	private int salary;
 	private String name;
 	
+	public Employee(String name, int salary) {
+		this.name = name;
+		this.salary = salary;
+	}
+	
 	public Employee() {
 		System.out.println("建立 Employee 物件");
 	}
