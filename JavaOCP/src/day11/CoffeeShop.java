@@ -13,7 +13,8 @@ public class CoffeeShop {
 		IceCreamCoffee iceCreamCoffee1 = new IceCreamCoffee();
 		iceCreamCoffee1.makeCoffee();
 		
-		
+		IceCreamCoffee iceCreamCoffee2 = new IceCreamCoffee("巧克力");
+		iceCreamCoffee2.makeCoffee(2);
 	}
 
 }
