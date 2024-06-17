@@ -23,6 +23,12 @@ public class Zoo2 {
 			animal.sound();
 		}
 		
+		Cat[] cats = {cat, tiger};
+		for(var ca : cats) {
+			ca.sound();
+		}
+		
+		
 	}
 
 }
