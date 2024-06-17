@@ -9,6 +9,11 @@ public class CoffeeShop {
 		Coffee coffee2 = new Coffee("拿鐵", '中');
 		coffee2.makeCoffee(3);
 		
+		//--------------------------------------
+		IceCreamCoffee iceCreamCoffee1 = new IceCreamCoffee();
+		iceCreamCoffee1.makeCoffee();
+		
+		
 	}
 
 }
