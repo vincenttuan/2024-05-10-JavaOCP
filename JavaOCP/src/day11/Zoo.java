@@ -5,5 +5,10 @@ public class Zoo {
 		Dog dog = new Dog();
 		dog.sound();
 		
+		Cat cat = new Cat();
+		cat.sound();
+		
+		Tiger tiger = new Tiger();
+		tiger.sound();
 	}
 }
