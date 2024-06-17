@@ -10,5 +10,7 @@ public class Zoo {
 		
 		Tiger tiger = new Tiger();
 		tiger.sound();
+		tiger.skill();
+		
 	}
 }
