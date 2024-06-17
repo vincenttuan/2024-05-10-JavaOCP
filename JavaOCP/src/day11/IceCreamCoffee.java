@@ -11,6 +11,11 @@ public class IceCreamCoffee extends Coffee {
 		this.flavor = flavor;
 	}
 	
+	public IceCreamCoffee(String type, char size, String flavor) {
+		super(type, size);
+		this.flavor = flavor;
+	}
+	
 	// 複寫方法
 	@Override
 	public void makeCoffee() {

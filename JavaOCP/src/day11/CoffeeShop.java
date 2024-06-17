@@ -15,6 +15,10 @@ public class CoffeeShop {
 		
 		IceCreamCoffee iceCreamCoffee2 = new IceCreamCoffee("巧克力");
 		iceCreamCoffee2.makeCoffee(2);
+		
+		IceCreamCoffee iceCreamCoffee3 = new IceCreamCoffee("卡布奇諾", '中', "草莓");
+		iceCreamCoffee3.makeCoffee(3);
+		
 	}
 
 }
