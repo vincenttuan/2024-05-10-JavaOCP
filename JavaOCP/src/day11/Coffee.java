@@ -24,5 +24,22 @@ public class Coffee {
 		System.out.printf("我要 %d 杯 %c%s%n", amount, size, type);
 	}
 	
+	// 方法封裝
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public char getSize() {
+		return size;
+	}
+
+	public void setSize(char size) {
+		this.size = size;
+	}
+	
 	
 }
