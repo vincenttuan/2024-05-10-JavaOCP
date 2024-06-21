@@ -13,6 +13,13 @@ public class BallTest {
 		System.out.println(b1.equals(b2));
 		System.out.println(b1.hashCode());
 		System.out.println(b2.hashCode());
+		
+		Ball b3 = null;
+		Tea tea = new Tea();
+		System.out.println(b1.equals(b1));
+		System.out.println(b1.equals(b3));
+		System.out.println(b1.equals(tea));
+		
 	}
 
 }
