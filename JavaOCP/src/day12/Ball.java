@@ -1,20 +1,20 @@
 package day12;
 
 public class Ball {
-	private String name;
+	private String color;
 	private Integer price;
 	
-	public Ball(String name, Integer price) {
-		this.name = name;
+	public Ball(String color, Integer price) {
+		this.color = color;
 		this.price = price;
 	}
 
-	public String getName() {
-		return name;
+	public String getColor() {
+		return color;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	public Integer getPrice() {
@@ -27,9 +27,7 @@ public class Ball {
 
 	@Override
 	public String toString() {
-		return "Ball [name=" + name + ", price=" + price + "]";
+		return "Ball [color=" + color + ", price=" + price + "]";
 	}
-	
-	
 	
 }
