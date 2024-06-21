@@ -12,8 +12,12 @@ public class Ball {
 	@Override
 	public boolean equals(Object obj) {
 		// 自行實作相等法則
-		
-		return true;
+		Ball b2 = (Ball)obj; // 轉型
+		if(color.equals(b2.color) && price.equals(b2.price)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public String getColor() {
