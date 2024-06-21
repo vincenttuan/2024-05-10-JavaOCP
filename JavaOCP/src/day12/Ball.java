@@ -19,6 +19,11 @@ public class Ball {
 			return false;
 		}
 	}
+	
+	@Override
+	public int hashCode() {
+		return 7 * 13 * color.hashCode() + price.hashCode();
+	}
 
 	public String getColor() {
 		return color;
