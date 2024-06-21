@@ -1,5 +1,7 @@
 package day12;
 
+import java.util.Objects;
+
 public class Ball {
 	private String color;
 	private Integer price;
@@ -10,19 +12,20 @@ public class Ball {
 	}
 	
 	@Override
-	public boolean equals(Object obj) {
-		// 自行實作相等法則
-		Ball b2 = (Ball)obj; // 轉型
-		if(color.equals(b2.color) && price.equals(b2.price)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	@Override
 	public int hashCode() {
-		return 7 * 13 * color.hashCode() + price.hashCode();
+		return Objects.hash(color, price);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ball other = (Ball) obj;
+		return Objects.equals(color, other.color) && Objects.equals(price, other.price);
 	}
 
 	public String getColor() {
