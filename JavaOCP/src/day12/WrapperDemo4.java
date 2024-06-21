@@ -17,7 +17,7 @@ public class WrapperDemo4 {
 		int sum = Stream.concat(
 							Arrays.stream(scoresA).boxed(), // 變為 Integer 串流 
 							Arrays.stream(scoresB))
-						.mapToInt(Integer::intValue)
+						.mapToInt(Integer::intValue) // IntStream
 						.sum();
 		
 		System.out.println(sum);
