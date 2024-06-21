@@ -1,5 +1,7 @@
 package day12;
 
+import java.util.Arrays;
+
 public class WrapperDemo3 {
 
 	public static void main(String[] args) {
@@ -28,6 +30,13 @@ public class WrapperDemo3 {
 			sum3 += score; // auto-unboxing
 		}
 		System.out.println(sum3);
+		
+		int sum4 = Arrays.stream(scores2)
+						 //.mapToInt(score -> score.intValue())
+						 //.mapToInt(score -> score) // auto-unboxing
+						 .mapToInt(Integer::intValue)
+						 .sum();
+		System.out.println(sum4);
 
 	}
 
