@@ -8,6 +8,13 @@ public class Ball {
 		this.color = color;
 		this.price = price;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		// 自行實作相等法則
+		
+		return true;
+	}
 
 	public String getColor() {
 		return color;
