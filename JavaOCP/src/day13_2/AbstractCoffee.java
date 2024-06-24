@@ -1,7 +1,7 @@
 package day13_2;
 
 // 透過 AbstractCoffee 來實現 Coffee
-public class AbstractCoffee implements Coffee {
+public abstract class AbstractCoffee implements Coffee {
 
 	private String name; // 咖啡名稱
 	private String origin; // 產地
@@ -16,6 +16,9 @@ public class AbstractCoffee implements Coffee {
 		this.strength = strength;
 		this.description = description;
 	}
+	
+	// 沒有實現的抽象方法, 目的是要給子類實現
+	public abstract double calculateCaffeine();
 
 	@Override
 	public String getName() {
@@ -41,5 +44,5 @@ public class AbstractCoffee implements Coffee {
 	public String getDescription() {
 		return description;
 	}
-
+	
 }
