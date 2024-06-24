@@ -1,9 +1,5 @@
 package day13_2;
 
-import day13.Coffee;
-import day13.Espresso;
-import day13.Latte;
-
 public class CoffeeShop {
 
 	public static void main(String[] args) {
