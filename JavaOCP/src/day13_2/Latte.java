@@ -6,4 +6,9 @@ public class Latte extends AbstractCoffee {
 		super(name, origin, price, strength, description);
 	}
 
+	@Override
+	public double calculateCaffeine() {
+		return getStrength() * 20;
+	}
+
 }

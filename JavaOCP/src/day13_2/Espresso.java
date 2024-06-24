@@ -5,5 +5,10 @@ public class Espresso extends AbstractCoffee {
 	public Espresso(String name, String origin, double price, int strength, String description) {
 		super(name, origin, price, strength, description);
 	}
+
+	@Override
+	public double calculateCaffeine() {
+		return getStrength() * 40;
+	}
 	
 }
