@@ -8,7 +8,7 @@ public class CoffeeShop {
 		
 		Coffee[] coffees = {espresso, latte};
 		for(Coffee coffee : coffees) {
-			System.out.printf("%s %s %1f %d %s%n", 
+			System.out.printf("%s %s %.1f %d %s%n", 
 					coffee.getName(), coffee.getOrigin(), coffee.getPrice(),
 					coffee.getStrength(), coffee.getDescription());
 		}
