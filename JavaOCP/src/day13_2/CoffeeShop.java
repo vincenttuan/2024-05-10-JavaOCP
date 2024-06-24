@@ -11,6 +11,11 @@ public class CoffeeShop {
 			System.out.printf("%s %s %.1f %d %s%n", 
 					coffee.getName(), coffee.getOrigin(), coffee.getPrice(),
 					coffee.getStrength(), coffee.getDescription());
+			
+			if(coffee instanceof AbstractCoffee) {
+				System.out.printf("咖啡因: %.1f%n", 
+						((AbstractCoffee)coffee).calculateCaffeine());
+			}
 		}
  
 	}
