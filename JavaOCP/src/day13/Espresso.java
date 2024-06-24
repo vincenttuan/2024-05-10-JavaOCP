@@ -18,33 +18,27 @@ public class Espresso implements Coffee {
 
 	@Override
 	public String getName() {
-		return null;
+		return name;
 	}
 
 	@Override
 	public String getOrigin() {
-		// TODO Auto-generated method stub
-		return null;
+		return origin;
 	}
 
 	@Override
 	public double getPrice() {
-		// TODO Auto-generated method stub
-		return 0;
+		return price;
 	}
 
 	@Override
 	public int getStrength() {
-		// TODO Auto-generated method stub
-		return 0;
+		return strength;
 	}
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
-		return null;
+		return description;
 	}
-
-	
 
 }
