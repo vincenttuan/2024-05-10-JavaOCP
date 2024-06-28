@@ -7,17 +7,19 @@ public class AbstractMeal implements Meal {
 	private Integer price;
 	 
 	public String getName() {
-		return null;
+		return name;
 	}
 	 
 	public Integer getPrice() {
-		return null;
+		return price;
 	}
 	 
 	public void setName(String name) {
+		this.name = name;
 	}
 	 
 	public void setPrice(Integer price) {
+		this.price = price;
 	}
 	 
 }
