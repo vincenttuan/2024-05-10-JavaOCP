@@ -1,6 +1,7 @@
 package day14;
 
 // 組合餐
+// 使用抽象類的目的是不可以直接 new Combo, 而必須 new Combo 的子類
 public abstract class Combo {
 	private Burger burger;
 	private SideMeal sideMeal;
