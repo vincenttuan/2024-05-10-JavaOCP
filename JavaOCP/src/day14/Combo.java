@@ -36,4 +36,6 @@ public abstract class Combo {
 	public void setBeverage(Beverage beverage) {
 		this.beverage = beverage;
 	}
+	
+	public abstract Integer getPrice();
 }

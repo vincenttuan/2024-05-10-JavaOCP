@@ -19,7 +19,21 @@ public class McDonaldMeals {
 		Combo classiCombo2 = new ClassicCombo(fish, salad, blackTea);
 		Combo discountCombo = new DiscountCombo(buger, onion, coffee, 0.8);
 		
+		// 組合餐陣列(表示使用者點了那些組合餐)
+		Combo[] combos = {classiCombo1, classiCombo2, discountCombo};
 		
+		int total = 0;
+		for(Combo combo : combos) {
+			// 列出組合餐中每一個餐點的名字
+			System.out.printf("%s %s %s $%d%n", 
+					combo.getBurger().getName(), 
+					combo.getSideMeal().getName(),
+					combo.getBeverage().getName(),
+					combo.getPrice());
+			total += combo.getPrice();
+		}
+		System.out.println("-------------------");
+		System.out.printf("總價 $%d%n", total);
 		
 	}
 }
