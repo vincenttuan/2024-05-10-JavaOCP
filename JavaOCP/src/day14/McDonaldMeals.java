@@ -15,7 +15,7 @@ public class McDonaldMeals {
 		Beverage coffee = new Beverage("熱咖啡", 40, true);
 		
 		// 組合餐
-		Combo classiCombo1 = new ClassicCombo(buger, fries, coffee);
+		Combo classiCombo1 = new ClassicCombo(buger, fries, cola);
 		Combo classiCombo2 = new ClassicCombo(fish, salad, blackTea);
 		Combo discountCombo = new DiscountCombo(buger, onion, coffee, 0.8);
 		
