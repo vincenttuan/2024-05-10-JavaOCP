@@ -12,7 +12,7 @@ public class CompanyTest {
 		
 		company.project(10);
 		
-		Company.CEO ceo = new Company.CEO();
+		Company.CEO ceo = new Company.CEO("John");
 		ceo.showCEO();
 		
 	}

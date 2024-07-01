@@ -10,8 +10,12 @@ public class Company {
 	
 	// 靜態內部類別
 	static class CEO {
-		static void showCEO() {
-			System.out.println("CEO 是 John");
+		private String ceoName;
+		CEO(String ceoName) {
+			this.ceoName = ceoName;
+		}
+		void showCEO() {
+			System.out.printf("CEO 是 %s%n", ceoName);
 		}
 	}
 	
