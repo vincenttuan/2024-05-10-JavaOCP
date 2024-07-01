@@ -14,7 +14,7 @@ public class CompanyTest {
 		
 		Company.CEO ceo = new Company.CEO("John");
 		ceo.showCEO();
-		
+		ceo.showCEO2();
 	}
 
 }

@@ -9,6 +9,7 @@ public class Company {
 	}
 	
 	// 靜態內部類別
+	// 可以支援物件成員與靜態成員
 	static class CEO {
 		private String ceoName;
 		CEO(String ceoName) {
@@ -17,11 +18,11 @@ public class Company {
 		void showCEO() {
 			System.out.printf("CEO 是 %s%n", ceoName);
 		}
-		/*
-		static void showCEO() {
+		
+		static void showCEO2() {
 			System.out.printf("CEO 是 John");
 		}
-		*/
+		
 	}
 	
 	public void project(int workdays) {
