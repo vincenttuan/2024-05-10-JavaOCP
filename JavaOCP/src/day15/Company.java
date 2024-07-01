@@ -8,6 +8,26 @@ public class Company {
 		this.name = name; // name 區域變數
 	}
 	
+	// 列出所有職稱
+	public void displayAllTitles() {
+		Title t1 = new Title() {
+			@Override
+			public String getName() {
+				return "總經理";
+			}
+		};
+		
+		Title t2 = new Title() {
+			@Override
+			public String getName() {
+				return "軟體設計師";
+			}
+		};
+		
+		t1.display();
+		t2.display();
+	}
+	
 	// 列出所有員工的工作
 	public void displayEmployeeJobs() {
 		Employee emp1 = new Employee() {
