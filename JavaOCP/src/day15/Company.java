@@ -17,6 +17,11 @@ public class Company {
 		void showCEO() {
 			System.out.printf("CEO 是 %s%n", ceoName);
 		}
+		/*
+		static void showCEO() {
+			System.out.printf("CEO 是 John");
+		}
+		*/
 	}
 	
 	public void project(int workdays) {
