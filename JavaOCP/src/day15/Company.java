@@ -39,6 +39,7 @@ public class Company {
 	}
 	
 	// 內部類別-部門
+	// 只支援物件成員不支援靜態成員
 	class Department {
 		private String deptName;
 		
