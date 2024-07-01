@@ -25,6 +25,7 @@ public class CompanyTest {
 		
 		company.displayAllPartTimeJobs();
 		company.displayEmployeeJobs();
+		company.displayAllTitles();
 	}
 
 }
