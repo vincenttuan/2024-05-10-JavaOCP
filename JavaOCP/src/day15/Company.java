@@ -12,6 +12,7 @@ public class Company {
 		// 方法內部類別-特別專案
 		class SpecialProject {
 			void handle() {
+				//workdays = 1; // 方法內部類別中不可以變更方法區域變數
 				System.out.printf("執行 %s 特別專案需花費 %d 天%n", name, workdays);
 			}
 		}
