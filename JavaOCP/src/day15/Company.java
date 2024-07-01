@@ -18,7 +18,7 @@ public class Company {
 			}
 		};
 		
-		// Lambda
+		// Lambda: 簡化/除去冗餘程式碼
 		PartTimeWorker ptw2 = () -> {
 			System.out.println("折紙箱");
 		};
