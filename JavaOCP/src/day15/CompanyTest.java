@@ -10,7 +10,7 @@ public class CompanyTest {
 		deptSales.displayDeptInfo();
 		deptIT.displayDeptInfo();
 		
-		company.project();
+		company.project(10);
 	}
 
 }

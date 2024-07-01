@@ -8,11 +8,11 @@ public class Company {
 		this.name = name; // name 區域變數
 	}
 	
-	public void project() {
+	public void project(int workdays) {
 		// 方法內部類別-特別專案
 		class SpecialProject {
 			void handle() {
-				System.out.printf("執行 %s 特別專案%n", name);
+				System.out.printf("執行 %s 特別專案需花費 %d 天%n", name, workdays);
 			}
 		}
 		SpecialProject project = new SpecialProject();
