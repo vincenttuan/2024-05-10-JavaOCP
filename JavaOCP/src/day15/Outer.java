@@ -4,7 +4,7 @@ package day15;
 public class Outer {
 	int x = 7; // 物件變數
 	static int sx = 9; // 類別變數
-	// 內部類別
+	// 一般內部類別
 	public class Inner {
 		int x = 77; // 物件變數
 		//static int sx = 99; // 一般內部類別不可以有類別成員
