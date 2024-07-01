@@ -24,6 +24,7 @@ public class CompanyTest {
 		showCEO2(); // import static day15.Company.CEO.showCEO2;
 		
 		company.displayAllPartTimeJobs();
+		company.displayEmployeeJobs();
 	}
 
 }
