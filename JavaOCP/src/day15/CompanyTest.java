@@ -1,5 +1,8 @@
 package day15;
 
+import day15.Company.CEO;
+import static day15.Company.CEO.showCEO2;
+
 public class CompanyTest {
 
 	public static void main(String[] args) {
@@ -17,6 +20,8 @@ public class CompanyTest {
 		ceo.showCEO2();
 		
 		Company.CEO.showCEO2();
+		CEO.showCEO2(); // import day15.Company.CEO;
+		showCEO2(); // import static day15.Company.CEO.showCEO2;
 	}
 
 }
