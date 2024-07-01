@@ -9,7 +9,7 @@ public class Company {
 	}
 	
 	// 靜態內部類別
-	static class CompanyCEO {
+	static class CEO {
 		static void showCEO() {
 			System.out.println("CEO 是 John");
 		}
