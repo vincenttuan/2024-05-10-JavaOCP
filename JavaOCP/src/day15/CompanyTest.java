@@ -11,6 +11,10 @@ public class CompanyTest {
 		deptIT.displayDeptInfo();
 		
 		company.project(10);
+		
+		Company.CEO ceo = new Company.CEO();
+		ceo.showCEO();
+		
 	}
 
 }
