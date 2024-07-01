@@ -8,6 +8,30 @@ public class Company {
 		this.name = name; // name 區域變數
 	}
 	
+	// 列出所有員工的工作
+	public void displayEmployeeJobs() {
+		Employee emp1 = new Employee() {
+			@Override
+			public void innerWork() {
+				System.out.println("寫程式");
+			}
+
+			@Override
+			public void outsideWork() {
+				System.out.println("幫別人除錯程式");
+			}
+
+			@Override
+			public void specialWork() {
+				System.out.println("領導新專案");
+			}
+		};
+		
+		emp1.innerWork();
+		emp1.outsideWork();
+		emp1.specialWork();
+	}
+	
 	// 列出所有工讀生的工作
 	public void displayAllPartTimeJobs() {
 		// 匿名內部類別
