@@ -8,6 +8,28 @@ public class Company {
 		this.name = name; // name 區域變數
 	}
 	
+	// 列出所有工讀生的工作
+	public void displayAllPartTimeJobs() {
+		// 匿名內部類別
+		PartTimeWorker ptw1 = new PartTimeWorker() {
+			@Override
+			public void job() {
+				System.out.println("發傳單");
+			}
+		};
+		
+		// Lambda
+		PartTimeWorker ptw2 = () -> {
+			System.out.println("折紙箱");
+		};
+		
+		PartTimeWorker ptw3 = () -> System.out.println("貼標籤");
+		
+		ptw1.job();
+		ptw2.job();
+		ptw3.job();
+	}
+	
 	// 靜態內部類別
 	// 可以支援物件成員與靜態成員
 	static class CEO {
