@@ -1,4 +1,4 @@
-package day16;
+package day16.consumer;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
