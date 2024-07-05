@@ -1,5 +1,6 @@
 package day16;
 
+import java.util.Arrays;
 import java.util.function.Consumer;
 
 /**
@@ -22,6 +23,23 @@ public class ConsumerDemo {
 		printData(data, printInfo2);
 		printData(data, printInfo3);
 		printData(data, printInfo4);
+		
+		System.out.println("------------");
+		Arrays.stream(new String[] {"Java", "Oracle", "OOPJP"})
+			  .forEach(printInfo1);
+		
+		System.out.println("------------");
+		Arrays.stream(new String[] {"Java", "Oracle", "OOPJP"})
+		  	  .forEach(printInfo2);
+		
+		System.out.println("------------");
+		Arrays.stream(new String[] {"Java", "Oracle", "OOPJP"})
+			  .forEach(printInfo3);
+		
+		System.out.println("------------");
+		Arrays.stream(new String[] {"Java", "Oracle", "OOPJP"})
+		  	  .forEach(printInfo4);
+	
 	}
 	
 	// 印出 data 根據 consumer 的邏輯
