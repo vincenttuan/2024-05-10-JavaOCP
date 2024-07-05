@@ -13,7 +13,7 @@ public class FunctionDemo {
 		Function<String, Integer> func1 = (x) -> {return x.length();};
 		Function<String, Integer> func2 = (x) -> x.length();
 		Function<String, Integer> func3 = String::length;
-		Function<String, Integer> func4 = new Function<String, Integer>() {
+		Function<String, Integer> func4 = new Function<>() {
 			@Override
 			public Integer apply(String t) {
 				return t.length();
