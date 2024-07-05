@@ -22,6 +22,7 @@ public class PredicateDemo {
 		printData(80, pred1, "及格", "不及格");
 		printData(75, pred2, "偶數", "奇數");
 		printData("Java", pred3, "有資料", "無資料");
+		printData(-40, (x) -> x > 0, "正整數", "負整數");
 	}
 	
 	public static <T> void printData(T data, Predicate<T> pred, String trueValue, String falseValue) {
