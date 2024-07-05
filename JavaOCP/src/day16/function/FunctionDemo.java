@@ -13,11 +13,17 @@ public class FunctionDemo {
 		Function<String, Integer> func1 = (x) -> {return x.length();};
 		Function<String, Integer> func2 = (x) -> x.length();
 		Function<String, Integer> func3 = String::length;
+		Function<String, Integer> func4 = new Function<String, Integer>() {
+			@Override
+			public Integer apply(String t) {
+				return t.length();
+			}
+		};
 		
 		printData("Java", func1);
 		printData("Oracle", func2);
 		printData("OCPJP", func3);
-		
+		printData("OCPWCD", func4);
 	}
 	
 	// 設計一個 printData 可以印出 Function 的回傳值
