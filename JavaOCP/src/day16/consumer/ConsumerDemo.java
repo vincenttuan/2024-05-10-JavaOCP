@@ -43,7 +43,7 @@ public class ConsumerDemo {
 	}
 	
 	// 印出 data 根據 consumer 的邏輯
-	public static void printData(String data, Consumer<String> consumer) {
+	public static <T> void printData(T data, Consumer<T> consumer) {
 		consumer.accept(data);
 	}
 

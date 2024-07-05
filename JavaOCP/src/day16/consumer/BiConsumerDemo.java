@@ -14,15 +14,8 @@ public class BiConsumerDemo {
 	}
 	
 	// 印出 data 根據 biConsumer 的邏輯
-	public static void printData(String data1, Integer data2, BiConsumer<String, Integer> biConsumer) {
+	public static <T, U> void printData(T data1, U data2, BiConsumer<T, U> biConsumer) {
 		biConsumer.accept(data1, data2);
 	}
-	
-	public static void printData(String data1, String data2, BiConsumer<String, String> biConsumer) {
-		biConsumer.accept(data1, data2);
-	}
-	
-	public static void printData(Integer data1, Integer data2, BiConsumer<Integer, Integer> biConsumer) {
-		biConsumer.accept(data1, data2);
-	}
+
 }
