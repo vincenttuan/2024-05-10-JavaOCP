@@ -12,7 +12,21 @@ public class ConsumerDemo {
 
 	public static void main(String[] args) {
 		// Consumer
-
+		Consumer<String> printInfo1 = (x) -> System.out.println(x);
+		Consumer<String> printInfo2 = (x) -> System.out.println(x+x);
+		Consumer<String> printInfo3 = (x) -> System.out.println(x.length());
+		Consumer<String> printInfo4 = (x) -> System.out.println(new StringBuilder(x).reverse());
+		
+		String data = "Java";
+		printData(data, printInfo1);
+		printData(data, printInfo2);
+		printData(data, printInfo3);
+		printData(data, printInfo4);
+	}
+	
+	// 印出 data 根據 consumer 的邏輯
+	public static void printData(String data, Consumer<String> consumer) {
+		consumer.accept(data);
 	}
 
 }
