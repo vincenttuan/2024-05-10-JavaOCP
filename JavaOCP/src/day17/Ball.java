@@ -9,7 +9,7 @@ public class Ball {
 		this.price = price;
 	}
 	
-		@Override
+	@Override
 	public boolean equals(Object obj) {
 		Ball b2 = (Ball)obj;
 		return color.equals(b2.color) && price == b2.price; 
