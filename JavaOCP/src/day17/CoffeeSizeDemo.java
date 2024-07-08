@@ -1,0 +1,9 @@
+package day17;
+
+public class CoffeeSizeDemo {
+	public static void main(String[] args) {
+		CoffeeSize small = CoffeeSize.SMALL;
+		System.out.println(small.getMl());
+		
+	}
+}
