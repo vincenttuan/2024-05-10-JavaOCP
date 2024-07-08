@@ -8,7 +8,7 @@ public class Coffee {
 	public Coffee(String name, CoffeeSize size) {
 		this.name = name;
 		this.size = size;
-		calculatePrice(); // 計算價格
+		this.price = calculatePrice(); // 計算價格
 	}
 	
 	// 計算價格的方法
