@@ -47,10 +47,9 @@ public class SetDemo {
 		//set.forEach((Object obj) -> System.out.println(obj));
 		//set.forEach((var obj) -> System.out.println(obj));
 		//set.forEach((obj) -> System.out.println(obj));
-		set.forEach(System.out::println);
-		
-		
-
+		//set.forEach(System.out::println);
+		set.stream().forEach(System.out::println); // 循序流(預設)
+		//set.parallelStream().forEach(System.out::println); // 並行流(支援多核心處理)
 	}
 
 }
