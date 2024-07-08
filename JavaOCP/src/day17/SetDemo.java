@@ -42,6 +42,10 @@ public class SetDemo {
 		}
 		System.out.println("------");
 		System.out.println(set);
+		
+		// 資料輪詢-forEach
+		set.forEach((obj) -> System.out.println(obj));
+		
 
 	}
 
