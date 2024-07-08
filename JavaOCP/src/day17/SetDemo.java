@@ -44,7 +44,11 @@ public class SetDemo {
 		System.out.println(set);
 		
 		// 資料輪詢-forEach
-		set.forEach((obj) -> System.out.println(obj));
+		//set.forEach((Object obj) -> System.out.println(obj));
+		//set.forEach((var obj) -> System.out.println(obj));
+		//set.forEach((obj) -> System.out.println(obj));
+		set.forEach(System.out::println);
+		
 		
 
 	}
