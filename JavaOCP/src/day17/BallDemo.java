@@ -8,8 +8,10 @@ public class BallDemo {
 		Ball b2= new Ball("Red", 100);
 		Ball b3 = b2;
 		
-		System.out.println(b1 == b2);
-		System.out.println(b2 == b3);
+		System.out.println(b1 == b2); // false
+		System.out.println(b2 == b3); // true
+		
+		System.out.println(b1.equals(b2));
 		
 	}
 
