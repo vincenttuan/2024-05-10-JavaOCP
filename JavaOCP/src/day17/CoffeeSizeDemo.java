@@ -5,5 +5,9 @@ public class CoffeeSizeDemo {
 		CoffeeSize small = CoffeeSize.SMALL;
 		System.out.println(small.getMl());
 		
+		for(CoffeeSize size : CoffeeSize.values()) {
+			System.out.println(size + ":" + size.getMl() + " ml");
+		}
+		
 	}
 }
