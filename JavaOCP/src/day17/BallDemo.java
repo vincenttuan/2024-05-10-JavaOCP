@@ -12,6 +12,8 @@ public class BallDemo {
 		System.out.println(b2 == b3); // true
 		
 		System.out.println(b1.equals(b2));
+		System.out.println(b1.hashCode());
+		System.out.println(b2.hashCode());
 		
 	}
 
