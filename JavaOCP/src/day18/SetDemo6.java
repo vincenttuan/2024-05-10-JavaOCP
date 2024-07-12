@@ -33,7 +33,15 @@ public class SetDemo6 {
 							   .mapToInt(Exam::getScore)
 							   .sum();
 		Exam hightScoreExam2 = exams.stream()
-									.max(Comparator.comparingInt(exam -> exam.getScore()))
+									//.max(Comparator.comparingInt(exam -> exam.getScore()))
+									.max(new Comparator<Exam>() {
+
+										@Override
+										public int compare(Exam o1, Exam o2) {
+											return o1.getScore() - o2.getScore();
+										}
+										
+									})
 									.get();
 		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam2.getSubject());
 		
