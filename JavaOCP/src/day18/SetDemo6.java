@@ -15,6 +15,15 @@ public class SetDemo6 {
 		int totalScore = 0; // 總分累計 
 		Exam hightScoreExam = null; // 最高分的 Exam 物件
 		
+		for(Exam exam : exams) {
+			// 總分累計
+			totalScore += exam.getScore();
+			// 判斷 exam 是否是最高分
+			if(hightScoreExam == null ||
+					exam.getScore().intValue() > hightScoreExam.getScore().intValue()) {
+				hightScoreExam = exam;
+			}
+		}
 		
 	}
 
