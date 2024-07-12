@@ -32,19 +32,27 @@ public class SetDemo6 {
 		int totalScore2 = exams.stream()
 							   .mapToInt(Exam::getScore)
 							   .sum();
+		
 		Exam hightScoreExam2 = exams.stream()
-									//.max(Comparator.comparingInt(exam -> exam.getScore()))
+									.max(Comparator.comparingInt(exam -> exam.getScore()))
+									.get();
+		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam2.getSubject());
+		
+		Exam hightScoreExam3 = exams.stream()
 									.max(new Comparator<Exam>() {
-
 										@Override
 										public int compare(Exam o1, Exam o2) {
 											return o1.getScore() - o2.getScore();
 										}
-										
 									})
 									.get();
-		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam2.getSubject());
+		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam3.getSubject());
 		
+		Exam hightScoreExam4 = exams.stream()
+									.max((o1, o2) -> o1.getScore() - o2.getScore())
+									.get();
+		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam4.getSubject());
+
 									
 	}
 
