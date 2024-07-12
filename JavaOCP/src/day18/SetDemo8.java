@@ -13,7 +13,11 @@ public class SetDemo8 {
 		exams.add(new Exam("Java", 90));
 		exams.add(new Exam("Python", null));
 		exams.add(new Exam("C#", 70));
-		// 請根據分數由大到小印出 (例如:Java:90, VB:80, C#:70)
+		// 1.印出所有成績資料
+		
+		// 2.移除 score = null 的元素
+		
+		// 3.最後根據分數由大到小印出 (例如:Java:90, VB:80, C#:70)
 		
 		
 
