@@ -1,5 +1,6 @@
 package day18;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,6 +27,17 @@ public class SetDemo6 {
 		}
 		
 		System.out.printf("總分: %d 最高分科目: %s%n", totalScore, hightScoreExam.getSubject());
+		
+		// 利用 Stream
+		int totalScore2 = exams.stream()
+							   .mapToInt(Exam::getScore)
+							   .sum();
+		Exam hightScoreExam2 = exams.stream()
+									.max(Comparator.comparingInt(exam -> exam.getScore()))
+									.get();
+		System.out.printf("總分: %d 最高分科目: %s%n", totalScore2, hightScoreExam2.getSubject());
+		
+									
 	}
 
 }
