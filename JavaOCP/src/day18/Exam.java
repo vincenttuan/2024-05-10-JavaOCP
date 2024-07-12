@@ -27,6 +27,14 @@ public class Exam {
 		Exam other = (Exam) obj;
 		return Objects.equals(score, other.score) && Objects.equals(subject, other.subject);
 	}
+	
+	public String getSubject() {
+		return subject;
+	}
+
+	public Integer getScore() {
+		return score;
+	}
 
 	@Override
 	public String toString() {

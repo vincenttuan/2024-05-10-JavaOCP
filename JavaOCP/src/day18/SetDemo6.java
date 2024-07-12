@@ -12,8 +12,10 @@ public class SetDemo6 {
 		exams.add(new Exam("Java", 90));
 		exams.add(new Exam("C#", 70));
 		// 求總分與最高分的科目 ?
+		int totalScore = 0; // 總分累計 
+		Exam hightScoreExam = null; // 最高分的 Exam 物件
 		
-
+		
 	}
 
 }
