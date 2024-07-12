@@ -19,6 +19,7 @@ public class SetDemo8 {
 		
 		// 2.移除 score = null 或 score < 0 的元素
 		exams.removeIf(exam -> exam.getScore() == null || exam.getScore().intValue() < 0);
+		System.out.println(exams);
 		
 		// 3.最後根據分數由大到小印出 (例如:Java:90, VB:80, C#:70)
 		
