@@ -40,6 +40,14 @@ public class Exam implements Comparable<Exam> {
 	public String toString() {
 		return "Exam [subject=" + subject + ", score=" + score + "]";
 	}
+	
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public void setScore(Integer score) {
+		this.score = score;
+	}
 
 	@Override
 	public int compareTo(Exam o) {

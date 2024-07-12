@@ -8,10 +8,11 @@ public class SetDemo8 {
 
 	public static void main(String[] args) {
 		// Set 排序使用 TreeSet
+		Exam java = new Exam("Java", 90);
 		SortedSet<Exam> exams = new TreeSet<>();
 		exams.add(new Exam("VB", 80));
 		exams.add(new Exam("Javascript", null));
-		exams.add(new Exam("Java", 90));
+		exams.add(java);
 		exams.add(new Exam("Pascal", -40));
 		exams.add(new Exam("Python", null));
 		exams.add(new Exam("C#", 70));
@@ -31,8 +32,10 @@ public class SetDemo8 {
 		exams2.addAll(exams); // 將 exams 加入
 		System.out.println(exams2);
 		
+		java.setScore(100);
+		System.out.println(exams);
+		System.out.println(exams2);
 		
-
 	}
 
 }
