@@ -25,6 +25,7 @@ public class SetDemo6 {
 			}
 		}
 		
+		System.out.printf("總分: %d 最高分科目: %s%n", totalScore, hightScoreExam.getSubject());
 	}
 
 }
