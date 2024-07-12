@@ -43,8 +43,14 @@ public class Exam implements Comparable<Exam> {
 
 	@Override
 	public int compareTo(Exam o) {
-		if(this.score == null || o.score == null) {
+		if(this.score == null && o.score == null) {
 			return 0;
+		}
+		if(this.score == null) {
+			return 1;
+		}
+		if(o.score == null) {
+			return -1;
 		}
 		return this.score - o.score; // 由小到大
 	}
