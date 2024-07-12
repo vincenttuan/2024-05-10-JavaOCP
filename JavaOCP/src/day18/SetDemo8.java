@@ -14,6 +14,7 @@ public class SetDemo8 {
 		exams.add(new Exam("Python", null));
 		exams.add(new Exam("C#", 70));
 		// 1.印出所有成績資料
+		System.out.println(exams);
 		
 		// 2.移除 score = null 的元素
 		
