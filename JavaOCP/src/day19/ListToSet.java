@@ -13,6 +13,7 @@ public class ListToSet {
 		emailList.add("mary@gmail.com");
 		emailList.add("john@gmail.com");
 		emailList.add("john@gmail.com");
+		System.out.println(emailList);
 		
 		// 使用 Stream 將 List 轉 Set
 		Set<String> emails = emailList.stream().collect(Collectors.toSet());
