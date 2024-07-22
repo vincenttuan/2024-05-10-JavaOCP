@@ -7,10 +7,12 @@ public class ExceptionDemo2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			System.out.print("請輸入分數:");
+			System.out.print("請輸入2組分數:");
 			try {
-				int score = sc.nextInt();
-				System.out.printf("分數: %d 及格: %b%n", score, score >= 60);
+				int score1 = sc.nextInt();
+				int score2 = sc.nextInt();
+				System.out.printf("分數: %d 及格: %b%n", score1, score1 >= 60);
+				System.out.printf("分數: %d 及格: %b%n", score2, score2 >= 60);
 				break; // 跳出迴圈
 			} catch (InputMismatchException e) {
 				System.err.println(e);
