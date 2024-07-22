@@ -5,9 +5,8 @@ import java.util.Scanner;
 
 public class ExceptionDemo2 {
 	public static void main(String[] args) {
-		
+		Scanner sc = new Scanner(System.in);
 		while (true) {
-			Scanner sc = new Scanner(System.in);
 			System.out.print("請輸入分數:");
 			try {
 				int score = sc.nextInt();
@@ -16,6 +15,7 @@ public class ExceptionDemo2 {
 			} catch (InputMismatchException e) {
 				System.err.println(e);
 				System.err.println("請輸入數字");
+				sc.nextLine(); // 清空緩衝區
 				continue; // 繼續迴圈
 			}
 		}
