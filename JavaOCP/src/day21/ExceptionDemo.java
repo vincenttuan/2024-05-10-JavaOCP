@@ -19,9 +19,6 @@ public class ExceptionDemo {
 			e.printStackTrace(System.err);
 			System.err.println("請輸入數字");
 		}
-		
-		
-
 	}
 
 }
