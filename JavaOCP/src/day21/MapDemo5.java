@@ -30,6 +30,10 @@ public class MapDemo5 {
 		scores2.putAll(scores);
 		System.out.println(scores2);
 		
+		Map<Person, Integer> scores3 = new TreeMap<>((o1, o2) -> scores.get(o1).compareTo(scores.get(o2)));
+		scores3.putAll(scores);
+		System.out.println(scores3);
+		
 		
 	}
 }
