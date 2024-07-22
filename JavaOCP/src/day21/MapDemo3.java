@@ -18,6 +18,7 @@ public class MapDemo3 {
 		Map<String, Integer> sortedMap = new TreeMap<>(unsortedMap);
 		System.out.println(sortedMap);
 		// 逐一印出元素(entry)
+		// sortedMap.entrySet() 得到一個 Set<Map.Entry<K, V>>
 		for(Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
 			System.out.println(entry.getKey() + ": " + entry.getValue());
 		}
