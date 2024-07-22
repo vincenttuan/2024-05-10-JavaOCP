@@ -51,8 +51,10 @@ public class Person implements Comparable<Person> {
 
 	@Override
 	public int compareTo(Person o) {
-		return name.compareTo(o.name); // 由小到大
-		//return o.name.compareTo(name); // // 由大到小
+		return name.compareTo(o.name); // name 由小到大
+		//return o.name.compareTo(name); // name 由大到小
+		//return age - o.age; // age 由小到大比
+		//return o.age - age; // age 由大到小比
 	}
 	
 }
