@@ -13,10 +13,11 @@ public class ExceptionDemo {
 			int score = sc.nextInt();
 			System.out.printf("分數: %d 及格: %b%n", score, score >= 60);
 		} catch (InputMismatchException e) {
-			System.out.println(e);
-			System.out.println(e.getMessage());
-			System.out.println(e.getLocalizedMessage());
-			System.out.println("請輸入數字");
+			System.err.println(e);
+			System.err.println(e.getMessage());
+			System.err.println(e.getLocalizedMessage());
+			e.printStackTrace(System.err);
+			System.err.println("請輸入數字");
 		}
 		
 		
