@@ -34,6 +34,9 @@ public class MapDemo5 {
 		scores3.putAll(scores);
 		System.out.println(scores3);
 		
+		Map<Person, Integer> scores4 = new TreeMap<>(Comparator.comparingInt(scores::get));
+		scores4.putAll(scores);
+		System.out.println(scores4);
 		
 	}
 }
