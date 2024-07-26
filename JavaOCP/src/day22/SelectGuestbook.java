@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class SelectGuestbook {
@@ -29,7 +30,7 @@ public class SelectGuestbook {
 				int id = rs.getInt("id");
 				String name = rs.getString("name");
 				String message = rs.getString("message");
-				Date createTime = rs.getDate("create_time");
+				Timestamp createTime = rs.getTimestamp("create_time");
 				System.out.printf("%d %s %s %s%n", id, name, message, createTime);
 			}
 			
