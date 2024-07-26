@@ -1,0 +1,37 @@
+-- 建立 demo 資料庫
+-- create database demo character set utf8mb4 collate utf8mb4_general_ci;
+
+-- 使用 demo 資料庫
+use demo;
+
+-- 刪除 guestbook 資料表
+drop table if exists guestbook;
+
+-- 建立 guestbook 資料表
+create table if not exists guestbook (
+	id int not null auto_increment, -- 序號, 整數, 不可空, 序號會自動+1新增
+    name varchar(50) not null, -- 留言者名稱, 可放50字元, 不可空
+    message varchar(255), -- 留言, 可放255字元, 可空
+    create_time timestamp default current_timestamp, -- 訊息建立時間, 時搓, 預設會放入現在時刻
+    primary key (id) -- 主鍵
+);
+
+-- 建立初始資料
+insert into guestbook(name, message) values('John', 'Hello1');
+insert into guestbook(name, message) values('Mary', 'Hello2');
+insert into guestbook(name, message) values('Jack', 'Hello3');
+insert into guestbook(name, message) values('Rose', 'Hello4');
+
+use demo;
+-- 查詢資料
+-- select id, name, message, create_time from guestbook;
+-- select count(*) as count from guestbook
+-- 修改將 id=2 的 message 欄位改為 'Test 5'
+-- update guestbook set message = 'Test 6' where id = 2;
+-- select id, name, message, create_time from guestbook;
+-- 刪除 id = 3 的紀錄
+-- delete from guestbook where id = 3;
+-- select id, name, message, create_time from guestbook;
+
+
+
