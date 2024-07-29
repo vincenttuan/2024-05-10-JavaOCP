@@ -8,21 +8,22 @@ public class CallStack3 {
 	public static void father(int cash) {
 		try {
 			mother(cash);
-		} catch (Exception e) {
+		} catch (NotEnougthException e) {
 			System.out.println(e.getMessage());
+			e.怎麼辦();
 		}	
 	}
 	
-	public static void mother(int cash) throws Exception {
+	public static void mother(int cash) throws NotEnougthException {
 		son(cash);
 	}
 	
-	public static void son(int cash) throws Exception {
+	public static void son(int cash) throws NotEnougthException {
 		int breakfirst = 150; // 早餐一客
 		
 		if(cash - breakfirst < 0) {
 			// 自行創建一個例外物件
-			Exception e = new Exception("金額不足");
+			NotEnougthException e = new NotEnougthException("金額不足");
 			throw e;
 		}
 		
