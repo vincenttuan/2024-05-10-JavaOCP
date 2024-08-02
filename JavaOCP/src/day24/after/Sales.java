@@ -27,6 +27,4 @@ public class Sales {
 		System.out.printf("%s總購買數量: %d 瓶%n", product.getName(), amount);
 		System.out.printf("應付款金額: %d 元%n", getTotal());
 	}
-	
-	
 }
