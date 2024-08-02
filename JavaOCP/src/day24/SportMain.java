@@ -9,6 +9,9 @@ public class SportMain {
 		st1.setName("烏龜");
 		st2.setName("兔子");
 		
+		st1.setPriority(10);
+		st2.setPriority(1);
+		
 		st1.start();
 		st2.start();
 		
