@@ -7,12 +7,13 @@ public class SalesMain {
 		Sales sales2 = new Sales(5, 2, "玫瑰花茶", 15, 12);
 		Sales sales3 = new Sales(3, 1, "凍頂烏龍", 25, 18);
 		Sales sales4 = new Sales(5, 2, "玫瑰花茶", 15, 20);
+		Sales sales5 = new Sales(1, 3, "錫蘭紅茶", 5, 10);
 		
 		sales1.printBill();
 		sales2.printBill();
 		sales3.printBill();
 		sales4.printBill();
-		
+		sales5.printBill();
 	}
 
 }
