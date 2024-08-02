@@ -29,7 +29,7 @@ public class Sales {
 	
 	// 列印帳單資料
 	public void printBill() {
-		System.out.printf("%s 每瓶 $%d (買 %d 送 %d ) 買入 %d 瓶需花費 $%d", 
+		System.out.printf("%s 每瓶 $%d (買 %d 送 %d ) 買入 %d 瓶需花費 $%d%n", 
 				name, price, x, y, amount, getTotal());
 		
 	}
