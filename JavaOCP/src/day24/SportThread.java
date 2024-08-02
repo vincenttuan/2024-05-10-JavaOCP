@@ -5,7 +5,10 @@ public class SportThread extends Thread {
 	
 	@Override
 	public void run() {
+		long start = System.currentTimeMillis();
 		marathon();
+		long end = System.currentTimeMillis();
+		System.out.printf("%s 執行時間: %d%n", Thread.currentThread().getName(), (end - start));
 	}
 	
 	// 跑馬拉松(1000m)
