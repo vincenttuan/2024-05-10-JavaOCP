@@ -18,10 +18,8 @@ public class Algorithm {
 		// -- 計算費用 ------------
 		int total = bottles * price;
 		
-		System.out.println(total);
-		
-		
-		
+		System.out.printf("%s 每瓶 $%d (買 %d 送 %d ) 買入 %d 瓶需花費 $%d", 
+				name, price, x, y, amount, total);
 		
 	}
 	
