@@ -11,9 +11,9 @@ public class WorkerThread extends Thread {
 			} catch (Exception e) {
 				System.out.println("發生意外: " + e);
 			}
-			System.out.printf("瓦斯工人送瓦斯中 %d 秒鐘\t", i);
+			System.out.printf("瓦斯工人送瓦斯中 %d 秒鐘%n", i);
 		}
-		System.out.println("\n瓦斯工人送瓦斯到家了");
+		System.out.println("瓦斯工人送瓦斯到家了");
 	}
 
 }
