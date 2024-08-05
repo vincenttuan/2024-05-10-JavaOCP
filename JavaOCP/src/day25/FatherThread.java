@@ -13,8 +13,16 @@ public class FatherThread extends Thread {
 		Thread worker = new WorkerThread();
 		worker.start();
 		
-		System.out.println("爸爸開始洗澡");
-		System.out.println("爸爸洗完澡了");
+		try {
+			worker.join();
+			System.out.println("爸爸開始洗熱水澡");
+		} catch (InterruptedException e) {
+			System.out.println("爸爸洗冷水澡");
+			//e.printStackTrace();
+		} finally {
+			System.out.println("爸爸洗完澡了");
+		}
+		
 	}
 	
 	// 主程式
