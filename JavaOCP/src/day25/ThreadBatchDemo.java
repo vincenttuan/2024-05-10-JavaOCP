@@ -22,5 +22,7 @@ public class ThreadBatchDemo {
 			executor.submit(new SendEmail(emailAddress));
 		}
 		
+		// 關閉執行緒池
+		executor.shutdown();
 	}
 }
