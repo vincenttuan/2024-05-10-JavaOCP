@@ -15,7 +15,8 @@ public class ThreadBatchDemo {
 		};
 		
 		// 建立執行緒池, 並設定固定數量的執行緒
-		ExecutorService executor = Executors.newFixedThreadPool(3);
+		//ExecutorService executor = Executors.newFixedThreadPool(3);
+		ExecutorService executor = Executors.newCachedThreadPool();
 		
 		// 將任務交給執行緒"池"並執行
 		for(String emailAddress : emailAddresses) {
