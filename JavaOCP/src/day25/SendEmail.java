@@ -12,10 +12,10 @@ import javax.mail.internet.MimeMessage;
 public class SendEmail {
     public static void main(String[] args) {
         // 收件者的電子郵件地址
-        String to = "recipient@example.com";
+        String to = "收件者@example.com";
 
         // 寄件者的電子郵件地址
-        String from = "your-email@gmail.com";
+        String from = "寄件者@gmail.com";
 
         // 使用 Gmail SMTP 伺服器
         String host = "smtp.gmail.com";
@@ -31,7 +31,9 @@ public class SendEmail {
         Session session = Session.getInstance(properties,
             new javax.mail.Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
-                    return new PasswordAuthentication("your-email@gmail.com", "your-password");
+                	// Google應用程式密碼請參考此篇
+                	// https://www.yongxin-design.com/Article/10
+                    return new PasswordAuthentication("寄件者@gmail.com", "Google應用程式密碼");
                 }
             });
 
