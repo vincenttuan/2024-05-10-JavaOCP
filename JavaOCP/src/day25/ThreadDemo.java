@@ -3,7 +3,7 @@ package day25;
 public class ThreadDemo {
 	public static void main(String[] args) {
 		// 待執行的工作
-		Runnable r1 = new SendEmail();
+		Runnable r1 = new SendEmail("hello@gmail.com");
 		Runnable r2 = new SaveData();
 		
 		// 建立執行緒 
