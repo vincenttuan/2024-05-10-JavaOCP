@@ -17,4 +17,10 @@ public class FatherThread extends Thread {
 		System.out.println("爸爸洗完澡了");
 	}
 	
+	// 主程式
+	public static void main(String[] args) {
+		Thread father = new FatherThread();
+		father.start();
+	}
+	
 }
