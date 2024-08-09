@@ -6,10 +6,12 @@ import java.util.concurrent.CyclicBarrier;
 
 public class Car extends Thread {
 	
-	private CyclicBarrier cyclicBarrier;
+	private CyclicBarrier cyclicBarrier1;
+	private CyclicBarrier cyclicBarrier2;
 	
-	public Car(CyclicBarrier cyclicBarrier) {
-		this.cyclicBarrier = cyclicBarrier;
+	public Car(CyclicBarrier cyclicBarrier1, CyclicBarrier cyclicBarrier2) {
+		this.cyclicBarrier1 = cyclicBarrier1;
+		this.cyclicBarrier2 = cyclicBarrier2;
 	}
 	
 	@Override
@@ -20,13 +22,20 @@ public class Car extends Thread {
 		try {
 			Thread.sleep(new Random().nextInt(3000)); // 模擬開車時間
 			System.out.printf("%s 到台中了%n", tName);
-			cyclicBarrier.await(); // 等待其他人
+			cyclicBarrier1.await(); // 等待其他人
 		} catch (InterruptedException | BrokenBarrierException e) {
 			e.printStackTrace();
 		}
 		
 		System.out.printf("%s 繼續往高雄出發...%n", tName);
 		
+		try {
+			Thread.sleep(new Random().nextInt(3000)); // 模擬開車時間
+			System.out.printf("%s 到高雄了%n", tName);
+			cyclicBarrier2.await(); // 等待其他人
+		} catch (InterruptedException | BrokenBarrierException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
