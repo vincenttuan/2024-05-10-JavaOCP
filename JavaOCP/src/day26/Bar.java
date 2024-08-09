@@ -12,6 +12,10 @@ public class Bar extends Thread {
 	
 	private CyclicBarrier cyclicBarrier;
 	
+	public Bar(CyclicBarrier cyclicBarrier) {
+		this.cyclicBarrier = cyclicBarrier;
+	}
+	
 	public void run() {
 		System.out.println("啟動");
 		try {
