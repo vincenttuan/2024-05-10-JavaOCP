@@ -7,7 +7,7 @@ public class PlayBar {
 
 	public static void main(String[] args) {
 		int party = 3;
-		Runnable result = () -> Bar.list.forEach(System.out::print);
+		Runnable result = () -> System.out.println(Bar.list);
 		CyclicBarrier cyclicBarrier = new CyclicBarrier(party, result);
 		
 		List.of(new Bar(cyclicBarrier), 
