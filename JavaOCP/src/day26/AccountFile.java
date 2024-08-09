@@ -54,6 +54,25 @@ public class AccountFile {
 		}
 	}
 	
+	// 提款
+	public synchronized void withdraw(int amount) {
+		String tName = Thread.currentThread().getName();
+		System.out.printf("%s 要提款 $%d%n", tName, amount);
 	
+		// 取得提款金額(從檔案中讀取)
+		int currentBalance = readBalance();
+		if(currentBalance >= amount) {
+			// 開始提款
+			for(int i=0;i<=999999999;i++); // 模擬提款延遲時間
+			// 餘額扣除
+			int newbalance = currentBalance - amount;
+			// 寫入檔案
+			writeBalance(newbalance);
+			System.out.printf("%s 提款 $%d 成功%n", tName, amount);
+		} else {
+			System.out.printf("%s 提款 $%d 失敗%n", tName, amount);
+		}
+		System.out.printf("帳戶餘額 $%d%n", readBalance());
+	}
 	
 }
