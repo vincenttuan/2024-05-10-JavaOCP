@@ -40,4 +40,18 @@ public class AccountFile {
 		return 0;
 	}
 	
+	// 寫入檔案餘額
+	private static void writeBalance(int balance) {
+		Path path = Paths.get(BALANCE_FILE); // 檔案路徑
+		try {
+			Files.writeString(path, // 檔案路徑 
+					String.valueOf(balance), // 要寫入的資料 
+					StandardOpenOption.CREATE, 
+					StandardOpenOption.WRITE, 
+					StandardOpenOption.TRUNCATE_EXISTING);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
