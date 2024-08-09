@@ -8,7 +8,7 @@ public class Withdraw implements Runnable {
 	
 	public Withdraw(Account account, int amount) {
 		this.account = account;
-		this.account = account;
+		this.amount = amount;
 	}
 	
 	@Override
