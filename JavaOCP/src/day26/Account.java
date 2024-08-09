@@ -8,7 +8,7 @@ public class Account {
 	}
 	
 	// 提款
-	public void withdraw(int amount) {
+	public synchronized void withdraw(int amount) {
 		String tName = Thread.currentThread().getName();
 		System.out.printf("%s 要提款 $%d%n", tName, amount);
 	
