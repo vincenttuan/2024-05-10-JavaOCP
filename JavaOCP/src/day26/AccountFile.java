@@ -31,7 +31,7 @@ public class AccountFile {
 		Path path = Paths.get(BALANCE_FILE); // 檔案路徑
 		try {
 			// 讀取檔案內容
-			String content = Files.readString(path);
+			String content = Files.readString(path).trim();
 			// 將內容轉 int
 			return Integer.parseInt(content);
 		} catch (IOException e) {
