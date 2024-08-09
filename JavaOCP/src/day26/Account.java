@@ -17,6 +17,8 @@ public class Account {
 		if(currentBalance >= amount) {
 			// 開始提款
 			for(int i=0;i<=999999999;i++); // 模擬提款延遲時間
+			// 餘額扣除
+			balance -= amount;
 			System.out.printf("%s 提款 $%d 成功%n", tName, amount);
 		} else {
 			System.out.printf("%s 提款 $%d 失敗%n", tName, amount);
