@@ -26,6 +26,6 @@ public class Bar extends Thread {
 		} catch (InterruptedException | BrokenBarrierException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Game Over !");
+		
 	}
 }
