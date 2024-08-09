@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class AccountFile {
+public class AccountFile implements Account {
 	
 	private static final String BALANCE_FILE = "src/day26/balance.txt"; // 餘額檔
 	

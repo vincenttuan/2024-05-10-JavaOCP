@@ -4,7 +4,7 @@ public class ATM {
 
 	public static void main(String[] args) {
 		// 建立帳戶
-		Account account = new Account(10000);
+		AccountVar account = new AccountVar(10000);
 		// 建立提款工作
 		Withdraw withdraw1 = new Withdraw(account, 7000);
 		Withdraw withdraw2 = new Withdraw(account, 5000);
